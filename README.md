@@ -1,4 +1,4 @@
-# REACT NATIVE ⚛️ , UNA APP DONDE PUEDES Administrador TUS CITAS MEDICAS 
+# REACT NATIVE ⚛️ , UNA APP DONDE PUEDES ADMINISTRAR TUS CITAS MEDICAS 
 
  <img width="120px" src="https://user-images.githubusercontent.com/46203192/113460059-ad9c8d00-93d4-11eb-85a2-ec8067824f1d.png" align="center" alt="GitHub Readme Stats" />
 
