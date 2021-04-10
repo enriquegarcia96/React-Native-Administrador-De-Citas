@@ -5,8 +5,6 @@ import Cita from './componentes/Citas';
 import Formulario from './componentes/Formulario';
 
 
-let formulario = require('./asset/Formulario.png');
-
 
 const App = ()   => {
 
@@ -14,7 +12,7 @@ const App = ()   => {
 
   //--- Definir es el state de citas ---//
   const [ citas, setCitas ] = useState([
-    {id: '1', paciente: 'Enrique', propietario: 'Marleny', sintomas: 'No engorda'}
+    {id: '1', paciente: 'Enrique', propietario: 'Marleny', sintomas: 'Falta de sueño'},
   ]);
 
 
@@ -49,6 +47,7 @@ const App = ()   => {
       <View style={ styles.contenedor }>
 
           <Text style={ styles.titulo }>Administrador de Citas</Text>
+          <Text style={ styles.firma }>Enrique S. García</Text>
 
           <View>
             <TouchableHighlight onPress={ () => mostrarFormulario() } style={styles.btnMostrarForm}>
@@ -62,7 +61,7 @@ const App = ()   => {
             {
               mostrarFor ? (
                 <>
-                <Text style={styles.titulo}>Crear Nueva Cita  <Image style={ styles.imgIcon }source={formulario}/> </Text>
+                <Text style={styles.titulo}>Crear Nueva Cita  <Image style={ styles.imgIcon }source={ require('./asset/Formulario.png') }/> </Text>
                 <Formulario 
                     citas={citas}
                     setCitas={setCitas}
@@ -105,10 +104,10 @@ const styles = StyleSheet.create({
   titulo: {
     color: '#f7f7f7',
     marginTop: Platform.OS === 'ios' ? 40 : 20,
-    marginBottom: 20,
-    fontSize: 24,
-    fontWeight: 'bold',
-    textAlign: 'center'
+    marginBottom: 11,
+    fontSize: 35, 
+    textAlign: 'center',
+    fontFamily: 'BebasNeue-Regular'
   },
   contenido: {
     flex: 1,
@@ -124,12 +123,21 @@ const styles = StyleSheet.create({
   },
   textoMostrarForm:{
     color: '#FFF',
-    fontWeight: 'bold',
-    textAlign: 'center'
+    //fontWeight: 'bold',
+    textAlign: 'center',
+    fontFamily: 'PermanentMarker-Regular'
     },
     imgIcon: {
       width: 44,
       height: 44
+    },
+    firma:{
+      textAlign: 'right',
+      marginRight: 20,
+      color: '#e05297',
+      fontFamily: 'DancingScript-VariableFont_wght',
+      fontSize: 15
+      
     }
 })
 

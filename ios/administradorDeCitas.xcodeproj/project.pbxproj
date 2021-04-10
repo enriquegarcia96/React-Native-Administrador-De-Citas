@@ -12,6 +12,13 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A18B8B5F88C849D6AB482F22 /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2CBBBB0801574487A6B783DB /* BebasNeue-Regular.ttf */; };
+		0DE573833E5945A58EEAC415 /* DancingScript-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC27A6307B2747DAAF4F79A7 /* DancingScript-VariableFont_wght.ttf */; };
+		279CA27760F24738BE402B1E /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26EBEE98A58943369A1C9BE8 /* FredokaOne-Regular.ttf */; };
+		95E8F526BB454D4F9CEFA839 /* PermanentMarker-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20C117B55F074D9B98BDB685 /* PermanentMarker-Regular.ttf */; };
+		10A230B44EE5458B9913ED64 /* Cinzel-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BD57BDE359EE431DBFC01805 /* Cinzel-VariableFont_wght.ttf */; };
+		7399313AD81049A5B0214D7F /* Tangerine-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F346AFA147F4DEDBB47D484 /* Tangerine-Regular.ttf */; };
+		FB40BEE51D4248F59B56E80D /* YesevaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84EA934C216D475286AA3F13 /* YesevaOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = administradorDeCitas/main.m; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = administradorDeCitas/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		2CBBBB0801574487A6B783DB /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; name = "BebasNeue-Regular.ttf"; path = "../asset/fonts/BebasNeue-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FC27A6307B2747DAAF4F79A7 /* DancingScript-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "DancingScript-VariableFont_wght.ttf"; path = "../asset/fonts/DancingScript-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		26EBEE98A58943369A1C9BE8 /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; name = "FredokaOne-Regular.ttf"; path = "../asset/fonts/FredokaOne-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		20C117B55F074D9B98BDB685 /* PermanentMarker-Regular.ttf */ = {isa = PBXFileReference; name = "PermanentMarker-Regular.ttf"; path = "../asset/fonts/PermanentMarker-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BD57BDE359EE431DBFC01805 /* Cinzel-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "Cinzel-VariableFont_wght.ttf"; path = "../asset/fonts/Cinzel-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2F346AFA147F4DEDBB47D484 /* Tangerine-Regular.ttf */ = {isa = PBXFileReference; name = "Tangerine-Regular.ttf"; path = "../asset/fonts/Tangerine-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		84EA934C216D475286AA3F13 /* YesevaOne-Regular.ttf */ = {isa = PBXFileReference; name = "YesevaOne-Regular.ttf"; path = "../asset/fonts/YesevaOne-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +123,7 @@
 				00E356EF1AD99517003FC87E /* administradorDeCitasTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				DF8B9D32561E474B884AD918 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -123,6 +138,21 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		DF8B9D32561E474B884AD918 /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				2CBBBB0801574487A6B783DB /* BebasNeue-Regular.ttf */,
+				FC27A6307B2747DAAF4F79A7 /* DancingScript-VariableFont_wght.ttf */,
+				26EBEE98A58943369A1C9BE8 /* FredokaOne-Regular.ttf */,
+				20C117B55F074D9B98BDB685 /* PermanentMarker-Regular.ttf */,
+				BD57BDE359EE431DBFC01805 /* Cinzel-VariableFont_wght.ttf */,
+				2F346AFA147F4DEDBB47D484 /* Tangerine-Regular.ttf */,
+				84EA934C216D475286AA3F13 /* YesevaOne-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -214,6 +244,13 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A18B8B5F88C849D6AB482F22 /* BebasNeue-Regular.ttf in Resources */,
+				0DE573833E5945A58EEAC415 /* DancingScript-VariableFont_wght.ttf in Resources */,
+				279CA27760F24738BE402B1E /* FredokaOne-Regular.ttf in Resources */,
+				95E8F526BB454D4F9CEFA839 /* PermanentMarker-Regular.ttf in Resources */,
+				10A230B44EE5458B9913ED64 /* Cinzel-VariableFont_wght.ttf in Resources */,
+				7399313AD81049A5B0214D7F /* Tangerine-Regular.ttf in Resources */,
+				FB40BEE51D4248F59B56E80D /* YesevaOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
