@@ -5,11 +5,6 @@ import { View, Text, StyleSheet, TextInput, Button, TouchableHighlight, Alert, S
 import  DateTimePickerModal  from 'react-native-modal-datetime-picker';
 import shortid from 'shortid';
 
-//--- importo los Iconos ---//
-let lesion = require('.././asset/paciente.png');
-let user = require('.././asset/user(2).png');
-let phone = require('.././asset/phone.png');
-let enfermeda = require('.././asset/sintomas.png');
 
 const Formulario = ({ citas, setCitas, guardarMostrarFor }) => {
 
@@ -87,9 +82,9 @@ const Formulario = ({ citas, setCitas, guardarMostrarFor }) => {
             fecha.trim() === '' || 
             hora.trim() === '') {
 
-                //--- falla la validacion ---//
-                mostrarAlerta()
-                return;
+            //--- falla la validacion ---//
+            mostrarAlerta()
+            return;
         }   
 
 
@@ -139,7 +134,7 @@ const Formulario = ({ citas, setCitas, guardarMostrarFor }) => {
             <ScrollView style={styles.formulario}>
                 <View style={styles.row}>
                     <Text style={styles.label}>Paciente</Text>
-                    <Image style={styles.imgIcon} source={lesion} />
+                    <Image style={styles.imgIcon} source={ require('../asset/paciente.png') } />
                 </View>
 
                 <TextInput 
@@ -148,8 +143,8 @@ const Formulario = ({ citas, setCitas, guardarMostrarFor }) => {
                     />
 
                 <View style={styles.row}>
-                    <Text style={styles.label}>Dueño</Text>
-                    <Image style={styles.imgIcon} source={user} />
+                    <Text style={styles.label}>Acompañante</Text>
+                    <Image style={styles.imgIcon} source={ require('../asset/user(2).png') } />
 
                 </View>
 
@@ -159,8 +154,8 @@ const Formulario = ({ citas, setCitas, guardarMostrarFor }) => {
                 />
 
                 <View style={styles.row}>
-                    <Text style={styles.label}>Telefono Contacto</Text>
-                    <Image style={styles.imgIcon} source={phone} />
+                    <Text style={styles.label}>Telefono</Text>
+                    <Image style={styles.imgIcon} source={ require('../asset/phone.png') } />
                 </View>
                     <TextInput 
                             //*--- Campo para la Fecha ---//
@@ -170,7 +165,7 @@ const Formulario = ({ citas, setCitas, guardarMostrarFor }) => {
                     />
 
                 <View>
-                    <Text style={styles.label}>Fecha: </Text>
+                    <Text style={styles.label}>Fecha</Text>
                     <Button title="Seleccionar Fecha" onPress={showDatePicker} />
                             <DateTimePickerModal
                                 isVisible={isDatePickerVisible}
@@ -181,11 +176,11 @@ const Formulario = ({ citas, setCitas, guardarMostrarFor }) => {
                                 headerTextIOS='Elige la fecha'
                                 cancelTextIOS='Cancelar'
                             />
-                        <Text style={styles.label}>{ fecha }</Text>
+                        <Text style={styles.label2}>{ fecha }</Text>
                 </View>
 
                 <View>
-                    <Text style={styles.label}>Hora: </Text>
+                    <Text style={styles.label}>Hora</Text>
                     <Button title="Seleccionar Hora" onPress={showTimePicker} style={styles.btn} />
                             <DateTimePickerModal
                                 isVisible={isTimePickerVisible}
@@ -197,12 +192,12 @@ const Formulario = ({ citas, setCitas, guardarMostrarFor }) => {
                                 cancelTextIOS='Confirmar'
                                 is24Hour
                             />
-                        <Text style={styles.label}>{ hora }</Text>
+                        <Text style={styles.label2}>{ hora }</Text>
                 </View>
 
                 <View style={styles.row}>
-                    <Text style={styles.label}>Sintomas:</Text>
-                    <Image style={styles.imgIcon} source={enfermeda} />
+                    <Text style={styles.label}>Sintomas</Text>
+                    <Image style={styles.imgIcon} source={ require('../asset/sintomas.png') } />
                 </View>
                     <TextInput 
                         multiline //es como tener una area de texto
@@ -232,10 +227,10 @@ const styles = StyleSheet.create({
         
     },  
     label:{
-        fontWeight: 'bold',
         fontSize: 18,
         marginTop: 20,
-        color: '#eeeeee'
+        color: '#eeeeee',
+        fontFamily: 'Cinzel-VariableFont_wght'
         
     },
     input: {
@@ -248,21 +243,27 @@ const styles = StyleSheet.create({
     },
     btnSubmit:{
         padding: 10,
-        backgroundColor: '#1fab89',
+        backgroundColor: '#00bd56',
         marginVertical:10
     },
     textoSubmit:{
         color: '#FFF',
-        fontWeight: 'bold',
+        fontFamily: 'YesevaOne-Regular' ,
         textAlign: 'center', 
     },
     imgIcon: {
-        width: 50,
-        height: 50,
-        
+        width: 37,
+        height: 37,
+        marginTop: 9,
+        marginLeft: 5
     },
     row:{
         flexDirection:'row'
+    },
+    label2:{
+        fontSize: 18,
+        color: '#FFF',
+        fontFamily: 'YesevaOne-Regular'
     }
 })
  
