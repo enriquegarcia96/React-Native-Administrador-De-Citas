@@ -15,18 +15,6 @@
  
 
 
-
-
-
 # Icono De La Aplicacion
 ![WhatsApp Image 2021-04-09 at 7 07 16 PM](https://user-images.githubusercontent.com/46203192/114253328-0638d080-9967-11eb-84f5-5689a37a4ec8.jpeg)
-
-
-
-
-
-
-
-
-
 
