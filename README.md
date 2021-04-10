@@ -9,9 +9,14 @@
 
 
 ### Imagenes a mostrar de que trata el proyecto ( las imagenes son capturas de pantallas desde el dispositivo movil de forma fisica )
- <img width="160px" src="https://user-images.githubusercontent.com/46203192/113636161-47f80d00-962f-11eb-8bb5-ad23f6e5126d.jpeg" align="center" alt="GitHub Readme Stats" /> <img width="160px" src="https://user-images.githubusercontent.com/46203192/113629445-a7e8b680-9623-11eb-82df-99cde247b05b.jpeg" align="center" alt="GitHub Readme Stats" /> <img width="160px" src="https://user-images.githubusercontent.com/46203192/113629504-ba62f000-9623-11eb-8ff0-0b42e798f662.jpeg" align="center" alt="GitHub Readme Stats" /> 
+ <img width="160px" src="https://user-images.githubusercontent.com/46203192/114253200-6ed37d80-9966-11eb-8408-54f66e614924.jpeg" align="center" alt="GitHub Readme Stats" /> <img width="160px" src="https://user-images.githubusercontent.com/46203192/114253215-8448a780-9966-11eb-9082-89129bdd7360.jpeg" align="center" alt="GitHub Readme Stats" /> <img width="160px" src="https://user-images.githubusercontent.com/46203192/114253222-90cd0000-9966-11eb-968c-b043ece74347.jpeg" align="center" alt="GitHub Readme Stats" /> 
  
-<img width="160px" src="https://user-images.githubusercontent.com/46203192/113629560-d1a1dd80-9623-11eb-80de-055675daf8fc.jpeg" align="center" alt="GitHub Readme Stats" /> <img width="160px" src="https://user-images.githubusercontent.com/46203192/113629603-e2eaea00-9623-11eb-94fb-a2add2b6111a.jpeg" align="center" alt="GitHub Readme Stats" /> <img width="160px" src="https://user-images.githubusercontent.com/46203192/113629676-fbf39b00-9623-11eb-8bdf-b9d841475248.jpeg" align="center" alt="GitHub Readme Stats" />
+<img width="160px" src="https://user-images.githubusercontent.com/46203192/114253229-9c202b80-9966-11eb-8376-f26108f37de2.jpeg" align="center" alt="GitHub Readme Stats" /> <img width="160px" src="https://user-images.githubusercontent.com/46203192/114253235-a3473980-9966-11eb-876c-5148d0052cec.jpeg" align="center" alt="GitHub Readme Stats" /> <img width="160px" src="" align="center" alt="GitHub Readme Stats" />
+
+
+# icono de la aplicacion
+![WhatsApp Image 2021-04-09 at 7 07 16 PM](https://user-images.githubusercontent.com/46203192/114253328-0638d080-9967-11eb-84f5-5689a37a4ec8.jpeg)
+
 
 
 
