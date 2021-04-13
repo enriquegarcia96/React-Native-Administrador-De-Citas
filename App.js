@@ -1,28 +1,52 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Image ,Text, StyleSheet, View, FlatList, TouchableHighlight, Platform, TouchableWithoutFeedback, Keyboard } from 'react-native';
 import Cita from './componentes/Citas';
 import Formulario from './componentes/Formulario';
 
-
+import AsyncStorage from '@react-native-community/async-storage'
 
 const App = ()   => {
 
+  //--- Definir es el state de citas ---//
+  const [ citas, setCitas ] = useState([]);
+  
+
   const [ mostrarFor, guardarMostrarFor ] = useState(false);
 
-  //--- Definir es el state de citas ---//
-  const [ citas, setCitas ] = useState([
-    {id: '1', paciente: 'Enrique', propietario: 'Marleny', sintomas: 'Falta de sueño'},
-  ]);
+  useEffect( () =>{
+    const obtenerCitasStorage = async () => {
+
+      try {
+
+        const citasStorage = await AsyncStorage.getItem('citas');
+
+        if (citasStorage) {
+
+          setCitas(JSON.parse(citasStorage))// lo convierte a un string
+
+        }
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+  obtenerCitasStorage()
+
+  },[] )
 
 
-    /**
-     * Eliminando citas del STATE
-     */
-   const eliminarPaciente = id => {
-      setCitas( (citasActuales)  => {
-          return citasActuales.filter( cita => cita.id !== id );
-      })    
+
+  /**
+   * Eliminando citas del STATE
+   */
+  const eliminarPaciente = id => {
+
+    const citasFiltradas = citas.filter( cita => cita.id !== id );
+
+    setCitas( citasFiltradas );
+    guardarCitasStorage(JSON.stringify(citasFiltradas));
+    
   }
 
 
@@ -36,6 +60,23 @@ const App = ()   => {
   const cerrarTeclado = () =>{
     Keyboard.dismiss();//oculta el teclado
   }
+
+
+
+
+  /**
+   * Creo un metodo para usar el asynstorage para almacenar
+  */
+  const guardarCitasStorage = async (citasJSON) =>{
+
+    try {
+        await AsyncStorage.setItem('citas', citasJSON);
+    } catch (error) {
+      console.log(error);
+    }
+
+  }
+
 
 
   return(
@@ -66,6 +107,7 @@ const App = ()   => {
                     citas={citas}
                     setCitas={setCitas}
                     guardarMostrarFor={guardarMostrarFor}
+                    guardarCitasStorage={guardarCitasStorage}
                     
                 />
                 </>
