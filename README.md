@@ -6,7 +6,7 @@
 #### `npm i react-native-modal-datetime-picker @react-native-community/datetimepicker`
 #### `npm i shortid`
 #### `npm install`
-
+#### `@react-native-community/async-storage`
 
 ### Imagenes a mostrar de que trata el proyecto ( las imagenes son capturas de pantallas desde el dispositivo movil de forma fisica )
 <img width="160px" src="https://user-images.githubusercontent.com/46203192/114255803-ee674980-9972-11eb-8922-9c207b03b079.jpeg" align="center" alt="GitHub Readme Stats" /> <img width="160px" src="https://user-images.githubusercontent.com/46203192/114253200-6ed37d80-9966-11eb-8408-54f66e614924.jpeg" align="center" alt="GitHub Readme Stats" /> <img width="160px" src="https://user-images.githubusercontent.com/46203192/114253215-8448a780-9966-11eb-9082-89129bdd7360.jpeg" align="center" alt="GitHub Readme Stats" /> 
